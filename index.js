@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 })
 
-app.post('/test', verifyWebhookSignature, (req, res) => {
+app.post('/test', (req, res) => {
     res.json({
         test: "Hello World!"
     })
